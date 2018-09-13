@@ -1,0 +1,28 @@
+html {
+    background: #121222;
+}
+
+h1 {
+    font-family: "Josefin Sans";
+    font-size: 4.5vw;
+    color: #DDF;
+
+}
+
+p {
+    font-family: 'Quicksand';
+    font-size: 3vw;
+} 
+
+a {
+    font-family: 'Quicksand';
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: left;
+}
