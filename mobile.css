@@ -42,12 +42,14 @@ a {
     color: #EAEAFF;
     text-decoration: none;
     text-align: center;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
 }
 
 a:hover {
     color: #444;
     background-color: #EAEAFF;
-    transition-duration: 1s;
+    text-shadow:.25em .25em 1em black;
 }
 
 nav {
