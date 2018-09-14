@@ -3,59 +3,121 @@ html {
     background-size: cover;
     background-color: #EAEAFF;
     font-family: 'Quicksand';
+    text-align: center;
+}
+
+* {
+    color: #444;
 }
 
 main {
     position: fixed;
-    background: #EAEAFF ;
-    font-family: 'Quicksand';
-    height: 100vh;
-    width: 80vw;
-    opacity: 0.92;
-    top: 0;
+    width: 90vw;
+    background: rgba(234, 234, 255,0.9);
+    border: .25vw solid #889;
     left: 5vw;
-    padding: 5%;
+    top: 0vh;
+    bottom: 0vh;
+    border-top-style: none;
 }
 
-h1 {
-    font-family: "Josefin Sans";
-    font-size: 5vw;
-    font-weight: 400;
+main * {
+    opacity: 0;
+    animation: fadein 2s ease-out 1 normal forwards;
+    -webkit-animation: fadein 2s ease-out 1 normal forwards;
 }
 
-h1, p {
-    color: #444;
+footer {
+    position: fixed;
+    width: 90vw;
+    left: 5vw;
+    bottom: 0vh;
+    padding-bottom: 3vh;
+    text-align: center;
 }
 
 p {
-    font-size: 3vw;
-} 
+    font-size: 3.5vmin;
+    margin: 3vmin;
+}
+
+h1, a {
+    font-family: "Josefin Sans";
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 6vmin;
+}
 
 a {
-    font-size: 2.5vw;
-    font-weight: 500;
-    background-color: #444;
-    border: 3% solid auto;
-    border-radius: 1em;
-    padding: 1% 1%;
-    margin: 1%;
+    opacity: 1;
+    width: 20vmin;
+    height: 12.5vmin;
+    background-color: #778;
+    font-size: 4vmin;
+    border: 0vmin solid #778;
+    border-radius: 50%;
+    padding-top: 7.5vmin;
+    margin: 3vmin;
     color: #EAEAFF;
     text-decoration: none;
-    text-align: center;
-    transition-duration: 1s;
+    transition-duration: .4s;
     transition-timing-function: ease-out;
+    box-shadow: .25em .25em 5vmin #777;
+    text-shadow: .125em .125em 1.5vmin black;
 }
 
 a:hover {
-    color: #444;
-    background-color: #EAEAFF;
-    text-shadow:.25em .25em 1em black;
+    color: #DDF;
+    border: .25vmin solid #445;
+    background: #445;
+    box-shadow: .25em .25em 5vmin #777;
+    text-shadow: .25em .25em 1vmin #444;
 }
 
 nav {
-    position: relative;
+    opacity: 0;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     flex: 1;
-    align-items: flex-start;
+    align-items: baseline;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
+
+#1s_delay {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+#2s_delay {
+    animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+}
+
+#3s_delay {
+    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+}
+
+#4s_delay {
+    animation-delay: 8s;
+    -webkit-animation-delay: 8s;
+}
+
+#5s_delay {
+    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
