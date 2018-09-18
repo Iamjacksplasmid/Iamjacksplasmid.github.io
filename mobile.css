@@ -1,7 +1,5 @@
 html {
-    background: url("https://i.imgur.com/qLCjUPe.jpg") no-repeat center fixed;
-    background-size: cover;
-    background-color: #EAEAFF;
+    background: #EAEAFF url("https://i.imgur.com/qLCjUPe.jpg") no-repeat center fixed;
     font-family: 'Quicksand';
     text-align: center;
 }
