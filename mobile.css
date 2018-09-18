@@ -7,6 +7,7 @@ html {
 }
 
 * {
+    box-sizing: border-box;
     color: #444;
 }
 
@@ -51,7 +52,7 @@ h1 {
 
 a {
     width: 20vmin;
-    height: 12.5vmin;
+    height: 20vmin;
     background-color: #778;
     font-size: 4vmin;
     border: 0vmin solid #778;
@@ -67,8 +68,10 @@ a {
 }
 
 a:hover {
+    width: 22vmin;
+    height: 22vmin;
+    padding-top: 8.5vmin;
     color: #DDF;
-    border: .25vmin solid #445;
     background: #445;
     box-shadow: .25em .25em 5vmin #777;
     text-shadow: .25em .25em 1vmin #444;
@@ -95,13 +98,13 @@ nav {
 }
 
 .delay3 {
-    animation-delay: 5s;
-    -webkit-animation-delay: 5s;
+    animation-delay: 4.5s;
+    -webkit-animation-delay: 4.5s;
 }
 
 .delay4 {
-    animation-delay: 7s;
-    -webkit-animation-delay: 7s;
+    animation-delay: 6s;
+    -webkit-animation-delay: 6s;
 }
 
 .delay5 {
